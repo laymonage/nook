@@ -11,6 +11,11 @@
 </main>
 
 <style>
+	main {
+		font-family: -apple-system, BlinkMacSystemFont, Lato, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	}
+
 	main::before {
 		position: fixed;
 		top: 0;
