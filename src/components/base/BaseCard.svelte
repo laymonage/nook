@@ -1,10 +1,12 @@
 <script lang="ts">
 </script>
 
-<div class="rounded bg-white dark:bg-gray-800 shadow-md flex-col
-  w-full xl:w-11/12 mx-auto p-8">
+<div
+	class="rounded bg-white dark:bg-gray-800 shadow-md flex-col
+  w-full md:w-11/12 lg:w-8/12 xl:w-7/12 mx-auto p-8"
+>
 	<div
-		class="text-blue-700 dark:text-blue-200 md:text-5xl text-4xl
+		class="text-blue-800 dark:text-blue-200 md:text-5xl text-4xl
 		mb-12 flex flex-col sm:flex-row items-baseline"
 	>
 		<slot name="header" />
