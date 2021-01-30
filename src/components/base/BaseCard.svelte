@@ -4,9 +4,11 @@
 		mb-12 flex flex-col sm:flex-row items-baseline"
 	>
 		<slot name="header" />
-		<div v-if="$slots.subtitle" class="md:text-3xl text-2xl ph:text-xl">
-			<slot name="subtitle" />
-		</div>
+		{#if $$slots.subtitle}
+			<div class="md:text-3xl text-2xl ph:text-xl">
+				<slot name="subtitle" />
+			</div>
+		{/if}
 	</div>
 	<slot />
 </div>
