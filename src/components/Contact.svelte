@@ -1,5 +1,8 @@
 <script lang="ts">
 	import BaseCard from './base/BaseCard.svelte';
+	import GitHub from './icons/GitHub.svelte';
+	import LinkedIn from './icons/LinkedIn.svelte';
+	import Twitter from './icons/Twitter.svelte';
 
 	const data = {
 		alias: 'laymonage',
@@ -9,15 +12,15 @@
 		links: [
 			{
 				url: 'https://github.com/laymonage',
-				icon: 'GitHub',
+				icon: GitHub,
 			},
 			{
 				url: 'https://linkedin.com/in/laymonage',
-				icon: 'LinkedIn',
+				icon: LinkedIn,
 			},
 			{
 				url: 'https://twitter.com/laymonage',
-				icon: 'Twitter',
+				icon: Twitter,
 			},
 		],
 	};
@@ -42,12 +45,12 @@
 				href={link.url}
 				class="ml-3 first:ml-0 p-1 rounded
         focus:outline-none focus:bg-gray-200 focus:text-blue-600
-        hover:bg-gray-200 hover:text-blue-600
-        dark:text-blue-200
-        dark:focus:bg-blue-900 dark:focus:text-blue-100
-        dark:hover:bg-blue-900 dark:hover:text-blue-100"
+				hover:bg-gray-200 hover:text-blue-600 dark:text-blue-200
+				dark:focus:bg-blue-900 dark:focus:text-blue-100
+				dark:hover:bg-blue-900 dark:hover:text-blue-100
+				fill-current w-8 h-8"
 			>
-				{link.icon}
+				<svelte:component this={link.icon} />
 			</a>
 		{/each}
 	</div>
