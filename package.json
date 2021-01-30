@@ -6,7 +6,7 @@
 		"build": "svelte-kit build",
 		"adapt": "svelte-kit adapt",
 		"start": "svelte-kit start",
-		"lint": "eslint"
+		"lint": "eslint src"
 	},
 	"devDependencies": {
 		"@snowpack/plugin-build-script": "^2.1.0",
