@@ -5,11 +5,8 @@
 
 <Nav />
 
-<main
-	class="flex w-full min-h-screen items-center
-	text-gray-700 dark:text-gray-300
-	transition duration-300 ease-out"
->
+<main class="flex w-full min-h-screen items-center
+	text-gray-700 dark:text-gray-300">
 	<slot />
 </main>
 
@@ -32,5 +29,11 @@
 		content: '';
 		z-index: -1;
 		will-change: transform;
+		transition-duration: 0.5s;
+		transition-timing-function: ease;
+	}
+
+	:global(.dark main::before) {
+		background-color: #111827;
 	}
 </style>
