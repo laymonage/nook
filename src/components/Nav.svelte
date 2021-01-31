@@ -27,11 +27,13 @@
 
 <nav
 	role="navigation"
-	class="sm:flex sm:justify-between sm:items-center
-    navbar z-10 fixed w-full py-3
-    bg-white dark:bg-gray-800 dark:text-blue-200 shadow-md
-		transition duration-300 ease-out navbar"
-	class:hide
+	class="sm:flex sm:justify-between sm:items-center z-10 fixed w-full py-3
+		bg-white dark:bg-gray-800 dark:text-blue-200
+		transition duration-300 ease-out transform"
+	class:shadow-md={!hide}
+	class:translate-y-0={!hide}
+	class:shadow-none={hide}
+	class:-translate-y-full={hide}
 >
 	<div class="mx-4 flex items-center justify-between flex-grow">
 		<a
@@ -71,8 +73,8 @@
 			<a
 				href="/{link}"
 				class="p-2 xs:mt-2 xs:first:mt-1 sm:ml-4 sm:first:ml-0 block rounded
-        focus:outline-none focus:bg-gray-200 hover:bg-gray-200
-				dark:focus:bg-blue-900 dark:hover:bg-blue-900 font-bold capitalize"
+					focus:outline-none focus:bg-gray-200 hover:bg-gray-200
+					dark:focus:bg-blue-900 dark:hover:bg-blue-900 font-bold capitalize"
 				class:text-blue-600={isCurrent(link)}
 				class:dark:text-blue-100={isCurrent(link)}
 				aria-current={isCurrent(link)}
@@ -82,14 +84,3 @@
 		{/each}
 	</div>
 </nav>
-
-<style>
-	.navbar {
-		transform: translate3d(0, 0, 0);
-	}
-
-	.navbar.hide {
-		box-shadow: none;
-		transform: translate3d(0, -100%, 0);
-	}
-</style>
