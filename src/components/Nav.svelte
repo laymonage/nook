@@ -3,6 +3,7 @@
 	import Logo from '$components/icons/Logo.svelte';
 	import Bars from '$components/icons/Bars.svelte';
 	import Times from '$components/icons/Times.svelte';
+	import NavLink from '$components/NavLink.svelte';
 	import ThemeToggle from '$components/ThemeToggle.svelte';
 
 	export let hideOffset = 60;
@@ -60,17 +61,7 @@
 	</div>
 	<div class="px-2 pb-2 sm:p-0 sm:mr-4 sm:flex sm:items-center" class:hidden={!open}>
 		{#each links as link}
-			<a
-				href="/{link}"
-				class="p-2 mb-2 sm:mb-0 first:mb-1 sm:first:mb-0 sm:ml-4 sm:first:ml-0
-					block rounded focus:outline-none focus:bg-gray-200 hover:bg-gray-200
-					dark:focus:bg-blue-900 dark:hover:bg-blue-900 font-bold capitalize"
-				class:text-blue-600={isCurrent(link)}
-				class:dark:text-blue-100={isCurrent(link)}
-				aria-current={isCurrent(link)}
-			>
-				{link}
-			</a>
+			<NavLink href="/{link}" text={link} current={isCurrent(link)} />
 		{/each}
 	</div>
 </nav>
