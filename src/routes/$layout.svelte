@@ -1,6 +1,9 @@
 <script>
 	import './_global.css';
+	import Nav from '$components/Nav.svelte';
 </script>
+
+<Nav />
 
 <main
 	class="flex w-full min-h-screen items-center
