@@ -7,7 +7,7 @@
 	import projects from '$data/projects';
 </script>
 
-<div class="mx-auto my-32">
+<div class="mx-auto my-8 sm:my-32">
 	<BaseContainer>
 		{#each projects as group}
 			<div class="mx-auto mt-16 md:w-11/12 lg:w-11/12 xl:w-9/12 first:mt-0">
