@@ -141,6 +141,7 @@ const softwareProjects = [
 		id: 1,
 		image: {
 			src: '/img/projects/aiden.svg',
+			lowContrast: true,
 		},
 		title: 'AidenBot',
 		url: 'https://github.com/laymonage/AidenBot',
@@ -221,6 +222,7 @@ const artProjects = [
 		id: 3,
 		image: {
 			src: '/img/projects/lunacy.png',
+			lowContrast: true,
 		},
 		title: 'Lunacy',
 		url: 'https://line.me/S/shop/theme/detail?id=33ef311d-7d79-444b-8e22-1f08d09c3f4b',

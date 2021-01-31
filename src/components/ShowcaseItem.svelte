@@ -6,7 +6,12 @@
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center my-12">
 	<div class="p-4 w-full sm:w-9/12 md:w-5/12 lg:w-3/12 mx-auto">
 		<a href={item.url}>
-			<img class="rounded" src={item.image.src} alt={item.title} />
+			<img
+				class="rounded"
+				src={item.image.src}
+				alt={item.title}
+				class:dark:bg-white={item.image.lowContrast}
+			/>
 		</a>
 	</div>
 	<div class="md:w-7/12 lg:w-9/12 mt-4 md:mt-0 md:ml-8">
