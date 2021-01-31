@@ -3,7 +3,6 @@ const softwareProjects = [
 		id: 9,
 		image: {
 			src: '/img/projects/djth.png',
-			class: [],
 		},
 		title: 'django-template-heroku',
 		url: 'https://github.com/laymonage/django-template-heroku',
@@ -25,7 +24,6 @@ const softwareProjects = [
 		id: 8,
 		image: {
 			src: '/img/projects/django-jsonfield-backport.svg',
-			class: ['w-6/12', 'md:w-8/12', 'xl:w-7/12', 'rounded-full'],
 		},
 		title: 'django-jsonfield-backport',
 		url: 'https://github.com/laymonage/django-jsonfield-backport',
@@ -45,7 +43,6 @@ const softwareProjects = [
 		id: 0,
 		image: {
 			src: '/img/projects/apex.svg',
-			class: ['w-6/12', 'md:w-8/12', 'xl:w-7/12'],
 		},
 		title: 'laymonage.com',
 		url: 'https://github.com/laymonage/apex',
@@ -85,7 +82,6 @@ const softwareProjects = [
 		id: 5,
 		image: {
 			src: '/img/projects/sigap.png',
-			class: ['p-4'],
 		},
 		title: 'SIGAP',
 		url: 'https://gitlab.cs.ui.ac.id/foss/covid-projects/mobile-apps',
@@ -105,7 +101,6 @@ const softwareProjects = [
 		id: 4,
 		image: {
 			src: '/img/projects/santun.png',
-			class: ['p-4'],
 		},
 		title: 'Santun',
 		url: 'https://github.com/laymonage/santun',
@@ -125,7 +120,6 @@ const softwareProjects = [
 		id: 6,
 		image: {
 			src: '/img/projects/flappymecin.png',
-			class: ['p-4'],
 		},
 		title: 'Flappy Mecin',
 		url: 'https://gitlab.com/MecinLearning/FlappyMecin',
@@ -147,7 +141,6 @@ const softwareProjects = [
 		id: 1,
 		image: {
 			src: '/img/projects/aiden.svg',
-			class: ['dark:bg-white'],
 		},
 		title: 'AidenBot',
 		url: 'https://github.com/laymonage/AidenBot',
@@ -183,7 +176,6 @@ const softwareProjects = [
 		id: 7,
 		image: {
 			src: '/img/projects/eval.png',
-			class: ['w-1/2'],
 		},
 		title: 'eval',
 		url: 'https://github.com/laymonage/eval',
@@ -203,7 +195,6 @@ const artProjects = [
 		id: 5,
 		image: {
 			src: '/img/projects/sagesans.svg',
-			class: ['fill-current', 'text-white'],
 		},
 		title: 'sage sans',
 		url: 'https://github.com/laymonage/sagesans',
@@ -221,7 +212,6 @@ const artProjects = [
 		id: 4,
 		image: {
 			src: '/img/projects/tiga.jpg',
-			class: ['w-3/4'],
 		},
 		title: 'Tiga',
 		url: 'https://www.instagram.com/p/BdRHV1TDYqx',
@@ -231,7 +221,6 @@ const artProjects = [
 		id: 3,
 		image: {
 			src: '/img/projects/lunacy.png',
-			class: ['p-4', 'w-8/12', 'dark:bg-white'],
 		},
 		title: 'Lunacy',
 		url: 'https://line.me/S/shop/theme/detail?id=33ef311d-7d79-444b-8e22-1f08d09c3f4b',
@@ -250,7 +239,6 @@ const artProjects = [
 		id: 1,
 		image: {
 			src: '/img/projects/aidensreactions.png',
-			class: ['w-3/4'],
 		},
 		title: "Aiden's Reactions",
 		url: 'https://telegram.me/addstickers/AidenR1',
