@@ -22,7 +22,7 @@
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		background-color: whitesmoke;
+		background-color: ghostwhite;
 		background-image: url('/bg.svg');
 		background-position: center;
 		background-size: cover;
