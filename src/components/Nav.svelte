@@ -1,10 +1,9 @@
 <script>
 	import { page } from '@sveltejs/kit/assets/runtime/app/stores.js';
 	import Logo from '$components/icons/Logo.svelte';
-	import Moon from '$components/icons/Moon.svelte';
-	import Sun from '$components/icons/Sun.svelte';
 	import Bars from '$components/icons/Bars.svelte';
 	import Times from '$components/icons/Times.svelte';
+	import ThemeToggle from '$components/ThemeToggle.svelte';
 
 	export let hideOffset = 60;
 
@@ -29,7 +28,7 @@
 	role="navigation"
 	class="sm:flex sm:justify-between sm:items-center z-10 fixed w-full py-3
 		bg-white dark:bg-gray-800 dark:text-blue-200
-		transition duration-300 ease-out transform"
+		transition duration-500 ease transform"
 	class:shadow-md={!hide}
 	class:translate-y-0={!hide}
 	class:shadow-none={hide}
@@ -46,16 +45,8 @@
 			<Logo />
 		</a>
 		<div class="flex items-center justify-between
-        text-blue-700 dark:text-blue-200">
-			<button
-				type="button"
-				class="focus:outline-none
-          focus:text-blue-600 hover:text-blue-600
-					dark:focus:text-blue-100 dark:hover:text-blue-100
-					fill-current w-6 h-6"
-			>
-				<Sun />
-			</button>
+				text-blue-700 dark:text-blue-200">
+			<ThemeToggle />
 			<button
 				type="button"
 				class="sm:hidden ml-4 focus:outline-none
