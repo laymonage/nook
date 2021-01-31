@@ -26,13 +26,12 @@
 
 <nav
 	role="navigation"
-	class="sm:flex sm:justify-between sm:items-center z-10 fixed w-full py-3
-		bg-white dark:bg-gray-800 dark:text-blue-200
-		transition duration-500 ease transform"
+	class="flex flex-col-reverse sm:flex-row sm:justify-between sm:items-center
+		z-10 fixed w-full py-3 bg-white dark:bg-gray-800 dark:text-blue-200
+		transition duration-500 ease transform sm:top-0 sm:bottom-auto bottom-0"
 	class:shadow-md={!hide}
-	class:translate-y-0={!hide}
-	class:shadow-none={hide}
-	class:-translate-y-full={hide}
+	class:translate-y-full={hide}
+	class:sm:-translate-y-full={hide}
 >
 	<div class="mx-4 flex items-center justify-between flex-grow">
 		<a
@@ -59,12 +58,12 @@
 			</button>
 		</div>
 	</div>
-	<div class="px-2 pt-2 sm:p-0 xs:mx-0 sm:mr-4 sm:flex sm:items-center" class:hidden={!open}>
+	<div class="px-2 pb-2 sm:p-0 sm:mr-4 sm:flex sm:items-center" class:hidden={!open}>
 		{#each links as link}
 			<a
 				href="/{link}"
-				class="p-2 xs:mt-2 xs:first:mt-1 sm:ml-4 sm:first:ml-0 block rounded
-					focus:outline-none focus:bg-gray-200 hover:bg-gray-200
+				class="p-2 mb-2 sm:mb-0 first:mb-1 sm:first:mb-0 sm:ml-4 sm:first:ml-0
+					block rounded focus:outline-none focus:bg-gray-200 hover:bg-gray-200
 					dark:focus:bg-blue-900 dark:hover:bg-blue-900 font-bold capitalize"
 				class:text-blue-600={isCurrent(link)}
 				class:dark:text-blue-100={isCurrent(link)}
