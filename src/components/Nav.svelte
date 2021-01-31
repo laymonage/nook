@@ -15,7 +15,7 @@
 	const links = ['projects'];
 
 	$: current = $page.path.substr(1);
-	$: isActive = (link) => link === current;
+	$: isCurrent = (link) => (link === current ? 'page' : undefined);
 
 	$: if (Math.abs(scrollY - lastScroll) >= hideOffset) {
 		hide = scrollY >= lastScroll;
@@ -38,6 +38,8 @@
 			href="/"
 			tabindex="-1"
 			class="focus:outline-none w-10 h-10 text-blue-700 dark:text-blue-100 fill-current"
+			aria-current={isCurrent('')}
+			aria-label="Home"
 		>
 			<Logo />
 		</a>
@@ -71,8 +73,9 @@
 				class="p-2 xs:mt-2 xs:first:mt-1 sm:ml-4 sm:first:ml-0 block rounded
         focus:outline-none focus:bg-gray-200 hover:bg-gray-200
 				dark:focus:bg-blue-900 dark:hover:bg-blue-900 font-bold capitalize"
-				class:text-blue-600={isActive(link)}
-				class:dark:text-blue-100={isActive(link)}
+				class:text-blue-600={isCurrent(link)}
+				class:dark:text-blue-100={isCurrent(link)}
+				aria-current={isCurrent(link)}
 			>
 				{link}
 			</a>
