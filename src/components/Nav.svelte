@@ -27,32 +27,26 @@
 
 <nav
 	role="navigation"
-	class="flex flex-col-reverse sm:flex-row sm:justify-between sm:items-center
-		z-10 fixed w-full py-3 bg-white dark:bg-gray-800 dark:text-blue-200
-		transition duration-500 ease transform sm:top-0 sm:bottom-auto bottom-0"
+	class="fixed bottom-0 z-10 flex flex-col-reverse w-full py-3 transition duration-500 transform bg-white sm:flex-row sm:justify-between sm:items-center dark:bg-gray-800 dark:text-blue-200 ease sm:top-0 sm:bottom-auto"
 	class:shadow-md={!hide}
 	class:translate-y-full={hide}
 	class:sm:-translate-y-full={hide}
 >
-	<div class="mx-4 flex items-center justify-between flex-grow">
+	<div class="flex items-center justify-between flex-grow mx-4">
 		<a
 			href="/"
 			tabindex="-1"
-			class="focus:outline-none w-10 h-10 text-blue-700 dark:text-blue-100 fill-current"
+			class="w-10 h-10 text-blue-700 fill-current focus:outline-none dark:text-blue-100"
 			aria-current={isCurrent('')}
 			aria-label="Home"
 		>
 			<Logo />
 		</a>
-		<div class="flex items-center justify-between
-				text-blue-700 dark:text-blue-200">
+		<div class="flex items-center justify-between text-blue-700 dark:text-blue-200">
 			<ThemeToggle />
 			<button
 				type="button"
-				class="sm:hidden ml-4 focus:outline-none
-          focus:text-blue-600 hover:text-blue-600
-					dark:focus:text-blue-100 dark:hover:text-blue-100
-					fill-current w-8 h-8"
+				class="w-8 h-8 ml-4 fill-current sm:hidden focus:outline-none focus:text-blue-600 hover:text-blue-600 dark:focus:text-blue-100 dark:hover:text-blue-100"
 				on:click={() => (open = !open)}
 			>
 				<svelte:component this={open ? Times : Bars} />

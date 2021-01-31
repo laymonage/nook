@@ -10,8 +10,7 @@
 
 <Nav />
 
-<main class="flex w-full min-h-screen items-center
-	text-gray-700 dark:text-gray-300">
+<main class="flex items-center w-full min-h-screen text-gray-700 dark:text-gray-300">
 	<slot />
 </main>
 

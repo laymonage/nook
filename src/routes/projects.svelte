@@ -7,10 +7,10 @@
 	import projects from '$data/projects';
 </script>
 
-<div class="my-32 mx-auto">
+<div class="mx-auto my-32">
 	<BaseContainer>
 		{#each projects as group}
-			<div class="md:w-11/12 lg:w-11/12 xl:w-9/12 mt-16 first:mt-0 mx-auto">
+			<div class="mx-auto mt-16 md:w-11/12 lg:w-11/12 xl:w-9/12 first:mt-0">
 				<BaseCard>
 					<slot slot="header">{group.type} Projects</slot>
 					<BaseCatalog items={group.data} let:item>

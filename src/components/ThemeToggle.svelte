@@ -27,10 +27,7 @@
 
 <button
 	type="button"
-	class="focus:outline-none
-	focus:text-blue-600 hover:text-blue-600
-	dark:focus:text-blue-100 dark:hover:text-blue-100
-	fill-current w-6 h-6"
+	class="w-6 h-6 fill-current focus:outline-none focus:text-blue-600 hover:text-blue-600 dark:focus:text-blue-100 dark:hover:text-blue-100"
 	aria-label="Theme"
 	on:click={toggle}
 >
