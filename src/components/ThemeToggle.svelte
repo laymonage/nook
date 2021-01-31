@@ -18,10 +18,10 @@
 		classList.add(current);
 	}
 
-	onMount(() => {
+	onMount(async () => {
 		const prefersDark = window && matchMedia('(prefers-color-scheme: dark)');
 		const preferred = prefersDark && prefersDark.matches ? 'dark' : 'light';
-		current = (localStorage && localStorage.theme) ?? preferred;
+		current = (localStorage && localStorage.theme) || preferred;
 	});
 </script>
 
