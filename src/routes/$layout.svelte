@@ -3,6 +3,11 @@
 	import Nav from '$components/Nav.svelte';
 </script>
 
+<svelte:head>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+</svelte:head>
+
 <Nav />
 
 <main class="flex w-full min-h-screen items-center
@@ -11,11 +16,6 @@
 </main>
 
 <style>
-	main {
-		font-family: -apple-system, BlinkMacSystemFont, Lato, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	}
-
 	main::before {
 		position: fixed;
 		top: 0;

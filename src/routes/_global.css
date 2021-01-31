@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	@apply font-sans;
+}
 
 a {
 	@apply text-blue-800 hover:text-blue-700 focus:text-blue-700
