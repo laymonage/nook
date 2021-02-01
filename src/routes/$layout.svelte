@@ -1,11 +1,16 @@
 <script>
+	import { page } from '@sveltejs/kit/assets/runtime/app/stores.js';
 	import './_global.css';
+	import { capitalize } from '$utils/string';
 	import Nav from '$components/Nav.svelte';
+
+	$: current = $page.path.substr(1);
 </script>
 
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+	<title>{current ? `${capitalize(current)} | ` : ''}laymonage</title>
 </svelte:head>
 
 <Nav />
