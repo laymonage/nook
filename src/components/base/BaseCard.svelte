@@ -6,7 +6,7 @@
 	>
 		<slot name="header" />
 		{#if $$slots.subtitle}
-			<div class="text-2xl md:text-3xl ph:text-xl">
+			<div class="text-2xl md:text-3xl">
 				<slot name="subtitle" />
 			</div>
 		{/if}

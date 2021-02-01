@@ -16,7 +16,7 @@
 			<span>{data.name}</span>
 		</slot>
 
-		<div class="mb-8 text-xl text-left md:text-2xl ph:text-lg">
+		<div class="mb-8 text-xl text-left md:text-2xl">
 			{@html marked(data.description)}
 		</div>
 		<div class="flex items-center">
