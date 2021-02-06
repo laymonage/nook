@@ -1,5 +1,5 @@
 <script>
-	import { page } from '@sveltejs/kit/assets/runtime/app/stores.js';
+	import { page } from '$app/stores';
 	import Logo from '$components/icons/Logo.svelte';
 	import Bars from '$components/icons/Bars.svelte';
 	import Times from '$components/icons/Times.svelte';

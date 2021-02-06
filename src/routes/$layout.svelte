@@ -1,5 +1,5 @@
 <script>
-	import { page } from '@sveltejs/kit/assets/runtime/app/stores.js';
+	import { page } from '$app/stores';
 	import './_global.css';
 	import { capitalize } from '$utils/string';
 	import Nav from '$components/Nav.svelte';
