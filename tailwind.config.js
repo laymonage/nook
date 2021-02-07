@@ -2,7 +2,7 @@ const { tailwindExtractor } = require('tailwindcss/lib/lib/purgeUnusedStyles');
 
 module.exports = {
 	purge: {
-		content: ['./src/**/*.html', './src/**/*.css', './src/**/*.svelte'],
+		content: ['./src/**/*.html', './src/**/*.css', './src/**/*.svelte', './src/**/*.md'],
 		options: {
 			defaultExtractor: (content) => [
 				...tailwindExtractor(content),
