@@ -1,6 +1,8 @@
 <script>
 	import { page } from '$app/stores';
 	import '$assets/css/global.css';
+	import '$assets/css/markdown.css';
+	import '$assets/css/hljs-night-owl.css';
 	import { capitalize } from '$utils/string';
 	import Nav from '$components/Nav.svelte';
 
