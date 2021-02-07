@@ -32,22 +32,22 @@
 
 <svelte:window on:keydown={focus} />
 
-<div class="mx-auto my-8 md:w-11/12 lg:w-7/12 sm:my-32">
+<div class="w-full mx-auto my-8 md:w-11/12 lg:w-7/12 sm:my-32">
 	<BaseContainer>
-		<div class="mx-auto md:w-11/12 lg:w-11/12 xl:w-9/12">
+		<div class="w-full mx-auto sm:w-11/12 xl:w-9/12">
 			<div class="mb-2">
 				<BaseCard>
 					<h1 class="mb-8 text-4xl text-center">Posts</h1>
-					<div class="flex flex-row">
+					<div class="flex">
 						<input
-							class="flex-grow w-full px-4 py-2 bg-gray-300 border-2 border-r-0 border-gray-400 rounded rounded-r-none border-opacity-20 focus:outline-none focus:bg-opacity-30 hover:bg-opacity-30 bg-opacity-10"
+							class="flex-grow w-full px-4 py-2 bg-gray-300 border-2 border-gray-400 rounded sm:border-r-0 sm:rounded-r-none border-opacity-20 focus:outline-none focus:bg-opacity-30 hover:bg-opacity-30 bg-opacity-10"
 							placeholder="Type what you're looking for..."
 							type="text"
 							bind:this={searchInput}
 							bind:value={search}
 						/>
 						<kbd
-							class="h-full p-2 my-auto text-gray-400 bg-gray-400 border-2 border-gray-400 rounded rounded-l-none border-opacity-20 bg-opacity-20"
+							class="hidden h-full p-2 my-auto text-gray-400 bg-gray-400 border-2 border-gray-400 rounded rounded-l-none border-opacity-20 bg-opacity-20 sm:block"
 							title="Press / to focus">/</kbd
 						>
 					</div>
