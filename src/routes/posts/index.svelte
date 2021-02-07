@@ -57,12 +57,20 @@
 				<div class="mb-2">
 					<a href={`posts/${post.slug}`} class="text-gray-700 dark:text-gray-300">
 						<BaseCard>
-							<div class="flex flex-col justify-between sm:flex-row">
+							<div class="flex flex-col justify-between mb-4 sm:flex-row">
 								<h2 class="text-xl font-bold">{post.title}</h2>
 								<p>{formatDate(new Date(post.date))}</p>
 							</div>
-							<div class="mt-4">
+							<div class="mb-6">
 								{post.description}
+							</div>
+							<div>
+								{#each post.tags as tag}
+									<span
+										class="p-1 ml-2 bg-gray-400 border-2 border-gray-500 rounded first:ml-0 bg-opacity-20"
+										>{tag}</span
+									>
+								{/each}
 							</div>
 						</BaseCard>
 					</a>
