@@ -22,9 +22,9 @@
 	<title>{post.attributes.title} | laymonage</title>
 </svelte:head>
 
-<div class="mx-auto my-8 sm:my-32">
+<div class="w-full mx-auto mt-2 mb-16 sm:mt-32">
 	<BaseContainer>
-		<div class="mx-auto mt-16 md:w-11/12 lg:w-10/12 xl:w-7/12 first:mt-0 post">
+		<div class="w-full mx-auto mt-16 sm:w-11/12 lg:w-10/12 xl:w-7/12 first:mt-0 post">
 			<BaseCard>
 				<div class="flex-row text-center">
 					<h2 class="mb-4 text-3xl font-bold">{post.attributes.title}</h2>
@@ -37,7 +37,7 @@
 						{/each}
 					</div>
 				</div>
-				<div class="mx-4 mt-4 markdown">
+				<div class="mt-4 sm:mx-4 markdown">
 					{@html post.body}
 				</div>
 			</BaseCard>

@@ -1,9 +1,9 @@
 <div
-	class="flex-col w-full p-8 transition-colors duration-500 bg-white rounded shadow-md dark:bg-gray-800 ease min-w-min"
+	class="flex-col w-full p-6 transition-colors duration-500 bg-white rounded shadow-md sm:p-8 dark:bg-gray-800 ease min-w-min"
 >
 	{#if $$slots.header}
 		<div
-			class="flex flex-col items-baseline mb-14 text-4xl text-blue-800 dark:text-blue-200 md:text-5xl sm:flex-row"
+			class="flex flex-col items-baseline text-4xl text-blue-800 mb-14 dark:text-blue-200 md:text-5xl sm:flex-row"
 		>
 			<slot name="header" />
 			{#if $$slots.subtitle}

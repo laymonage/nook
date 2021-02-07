@@ -5,7 +5,7 @@
 	import data from '$data/profile';
 </script>
 
-<div class="mx-auto sm:w-10/12 lg:w-7/12 xl:w-6/12">
+<div class="w-11/12 mx-auto sm:w-10/12 lg:w-7/12 xl:w-6/12">
 	<BaseCard>
 		<slot slot="header">
 			<strong>{data.alias}</strong>

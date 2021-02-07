@@ -24,8 +24,9 @@
 	@apply my-8;
 }
 
-.markdown p {
-	@apply mb-6 text-lg text-justify;
+.markdown p,
+.markdown li {
+	@apply mb-6 text-base text-justify sm:text-lg;
 	line-height: 1.7;
 }
 

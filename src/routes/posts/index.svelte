@@ -32,7 +32,7 @@
 
 <svelte:window on:keydown={focus} />
 
-<div class="w-full mx-auto my-8 md:w-11/12 lg:w-7/12 sm:my-32">
+<div class="w-full mx-auto mt-2 mb-16 md:w-11/12 lg:w-7/12 sm:mt-32">
 	<BaseContainer>
 		<div class="w-full mx-auto sm:w-11/12 xl:w-9/12">
 			<div class="mb-2">

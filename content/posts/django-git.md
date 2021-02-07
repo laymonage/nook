@@ -31,7 +31,7 @@ Most of Django's workflow is based around the concept of a ticket’s triage
 stages. The contributing guide has a nice diagram for that:
 
 <a target="_blank" rel="noreferrer noopener nofollow" href="https://docs.djangoproject.com/en/dev/internals/contributing/triaging-tickets/#how-can-i-help-with-triaging">
-	<img src="https://blog.laymonage.com/images/uploads/triage_process.svg" alt="The triage process." title="The triage process." width="66%">
+	<img src="https://blog.laymonage.com/images/uploads/triage_process.svg" alt="The triage process." title="The triage process." class="w-full sm:w-8/12">
 </a>
 
 In short, the stages are:
