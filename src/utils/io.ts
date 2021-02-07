@@ -4,6 +4,11 @@ import { join } from 'path';
 import fm from 'front-matter';
 import { md } from './markdown';
 
+export function rootDir(): string {
+	const srv = process.env.LAMBDA_TASK_ROOT;
+	return srv ? join(srv, 'src', 'functions', 'render') : '';
+}
+
 export function readPost(path: string): Post {
 	const content = readFileSync(path, 'utf-8');
 	const { attributes, body }: Post = fm(content);

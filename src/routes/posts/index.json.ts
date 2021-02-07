@@ -1,5 +1,6 @@
+import { join } from 'path';
 import type { Response } from '../../models/api';
-import { readPostsDir } from '../../utils/io';
+import { readPostsDir, rootDir } from '../../utils/io';
 
 export async function get(): Promise<Response> {
 	return {
@@ -7,6 +8,6 @@ export async function get(): Promise<Response> {
 		headers: {
 			'Content-Type': 'application/json',
 		},
-		body: { content: readPostsDir('content/posts') },
+		body: { content: readPostsDir(join(rootDir(), 'content', 'posts')) },
 	};
 }
