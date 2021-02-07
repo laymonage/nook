@@ -12,7 +12,9 @@
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
-	<title>{current ? `${capitalize(current)} | ` : ''}laymonage</title>
+	{#if !current.includes('/')}
+		<title>{current ? `${capitalize(current)} | ` : ''}laymonage</title>
+	{/if}
 </svelte:head>
 
 <Nav />

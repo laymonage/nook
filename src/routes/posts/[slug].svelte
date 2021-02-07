@@ -11,6 +11,10 @@
 
 	import { formatDateTime } from '$utils/string';
 	export let post;
+
+	let title = '';
+
+	$: title = post.attributes.title;
 </script>
 
 <svelte:head>
@@ -19,7 +23,7 @@
 		href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
 		rel="stylesheet"
 	/>
-	<title>{post.attributes.title} | laymonage</title>
+	<title>{title}{title && ` | `}laymonage</title>
 </svelte:head>
 
 <div class="w-full mx-auto mt-2 mb-16 sm:mt-32">
