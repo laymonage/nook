@@ -16,7 +16,7 @@
 	<script>
 		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 		const preferred = prefersDark && prefersDark.matches ? 'dark' : 'light';
-		const current = (localStorage && localStorage.theme) ?? preferred;
+		const current = (localStorage && localStorage.theme) || preferred;
 		const html = document.querySelector('html');
 		html.classList.add(current);
 	</script>
