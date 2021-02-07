@@ -12,7 +12,7 @@
 	let lastScroll = 0;
 	let hide = false;
 	let open = false;
-	const links = ['projects'];
+	const links = ['posts', 'projects'];
 
 	$: current = $page.path.substr(1);
 	$: isCurrent = (link) => (link === current ? 'page' : undefined);
