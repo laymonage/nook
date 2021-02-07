@@ -12,7 +12,7 @@ images:
   - /images/uploads/django+git.png
 ---
 
-![The web framework for perfectionists with deadlines, and the version control system.](https://blog.laymonage.com/images/uploads/django+git.png "The web framework for perfectionists with deadlines, and the version control system.")
+![The web framework for perfectionists with deadlines, and the version control system.](https://blog.laymonage.com/images/uploads/django+git.png?lazy=0 "The web framework for perfectionists with deadlines, and the version control system.")
 
 Like pretty much every popular open source project nowadays,
 [**Django**][django] uses [**Git**][git] to manage its code base. It's hosted
@@ -31,7 +31,7 @@ Most of Django's workflow is based around the concept of a ticket’s triage
 stages. The contributing guide has a nice diagram for that:
 
 <a target="_blank" rel="noreferrer noopener nofollow" href="https://docs.djangoproject.com/en/dev/internals/contributing/triaging-tickets/#how-can-i-help-with-triaging">
-	<img src="https://blog.laymonage.com/images/uploads/triage_process.svg" alt="The triage process." title="The triage process." class="w-full sm:w-8/12">
+	<img src="https://blog.laymonage.com/images/uploads/triage_process.svg" alt="The triage process." title="The triage process." class="w-full sm:w-8/12" loading="lazy">
 </a>
 
 In short, the stages are:

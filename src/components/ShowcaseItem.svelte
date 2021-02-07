@@ -11,6 +11,7 @@
 				src={item.image.src}
 				alt={item.title}
 				class:dark:bg-white={item.image.lowContrast}
+				loading="lazy"
 			/>
 		</a>
 	</div>

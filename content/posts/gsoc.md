@@ -152,7 +152,7 @@ announcement, I also wrote [a documentation ticket][first-ticket] and submitted
 > Now, for the real deal: **working on the project**.
 
 <a target="_blank" rel="noreferrer noopener nofollow" href="https://tenor.com/view/spongebob-squarepants-patrick-star-snow-winter-cold-gif-4769079">
-	<img src="https://blog.laymonage.com/images/uploads/shiver.gif" alt="Patrick shivering" title="I literally shivered when I found out I was accepted." width="75%">
+	<img src="https://blog.laymonage.com/images/uploads/shiver.gif" alt="Patrick shivering" title="I literally shivered when I found out I was accepted." width="75%" loading="lazy">
 </a>
 
 It was around 04:00 AM. I woke up to a chat from my friend. He said,
