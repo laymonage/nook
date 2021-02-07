@@ -13,8 +13,10 @@
 	export let post;
 
 	let title = '';
+	let description = '';
 
 	$: title = post.attributes.title;
+	$: description = post.attributes.description;
 </script>
 
 <svelte:head>
@@ -24,6 +26,8 @@
 		rel="stylesheet"
 	/>
 	<title>{title}{title && ` | `}laymonage</title>
+	<meta name="description" content={description} />
+	<meta property="og:description" content={description} />
 </svelte:head>
 
 <div class="w-full mx-auto mt-2 mb-16 sm:mt-32">
@@ -31,7 +35,7 @@
 		<div class="w-full mx-auto mt-16 sm:w-11/12 lg:w-10/12 xl:w-7/12 first:mt-0 post">
 			<BaseCard>
 				<div class="flex-row text-center">
-					<h2 class="mb-4 text-3xl font-bold">{post.attributes.title}</h2>
+					<h2 class="mb-4 text-3xl font-bold">{title}</h2>
 					<p class="mb-4">{formatDateTime(new Date(post.attributes.date))}</p>
 					<div class="mb-16">
 						{#each post.attributes.tags as tag}
