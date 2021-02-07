@@ -8,8 +8,7 @@ toc: false
 comments: true
 draft: false
 description: 'Django uses Git to manage its codebase, but how?'
-images:
-  - /images/uploads/django+git.png
+image: https://blog.laymonage.com/images/uploads/django+git.png
 ---
 
 ![The web framework for perfectionists with deadlines, and the version control system.](https://blog.laymonage.com/images/uploads/django+git.png?lazy=0 "The web framework for perfectionists with deadlines, and the version control system.")

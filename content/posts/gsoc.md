@@ -11,12 +11,11 @@ draft: false
 description: >-
   Google Summer of Code 2019 was a life changing experience for me. Thanks to
   Django, I learned a lot of things through the summer.
-images:
-  - /images/uploads/gsoc-15years.png
+image: https://blog.laymonage.com/images/uploads/gsoc-15years.png
 ---
 
 <a target="_blank" rel="noreferrer noopener nofollow" href="https://opensource.googleblog.com/2019/09/google-summer-of-code-2019-statistics.html">
-	<img src="https://blog.laymonage.com/images/uploads/gsoc-15years.png" alt="Celebrating 15 Years - Google Summer of Code" title="Google Summer of Code 2019: 15th year" class="dark:bg-gray-700 bg-opacity-5">
+	<img src="https://blog.laymonage.com/images/uploads/gsoc-15years.png" alt="Celebrating 15 Years - Google Summer of Code" title="Google Summer of Code 2019: 15th year" class="dark:bg-gray-700">
 </a>
 
 [**Google Summer of Code**][gsoc] 2019 was a life changing experience for me.

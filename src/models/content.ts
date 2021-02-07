@@ -6,7 +6,7 @@ export interface PostAttributes {
 	comments: boolean;
 	draft: boolean;
 	description: string;
-	images: string[];
+	image: string;
 	slug?: string;
 }
 

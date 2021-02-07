@@ -10,8 +10,7 @@ draft: false
 description: |-
   As a regular user of Git, I find one particular command
   to be extremely powerful. That command is…
-images:
-  - /images/uploads/git-rebase-2.png
+image: https://blog.laymonage.com/images/uploads/git-rebase-2.png
 ---
 
 According to StackOverflow’s [annual developer survey][StackOverflow-survey],
