@@ -21,11 +21,13 @@ module.exports = {
 		'@snowpack/plugin-typescript',
 	],
 	mount: {
+		'src/assets': '/assets',
 		'src/components': '/_components',
 		'src/data': '/data',
 		'src/utils': '/_utils',
 	},
 	alias: {
+		$assets: './src/assets',
 		$components: './src/components',
 		$data: './src/data',
 		$utils: './src/utils',

@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import './_global.css';
+	import '$assets/css/global.css';
 	import { capitalize } from '$utils/string';
 	import Nav from '$components/Nav.svelte';
 
@@ -15,7 +15,7 @@
 
 <Nav />
 
-<main class="flex items-center w-full min-h-screen text-gray-700 dark:text-gray-300">
+<main class="flex items-center w-full min-h-screen">
 	<slot />
 </main>
 
