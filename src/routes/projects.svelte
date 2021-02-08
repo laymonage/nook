@@ -10,7 +10,7 @@
 <div class="mx-auto mt-2 mb-16 sm:mt-32">
 	<BaseContainer>
 		{#each projects as group}
-			<div class="mx-auto mt-16 md:w-11/12 lg:w-11/12 xl:w-9/12 first:mt-0">
+			<div class="mx-auto mt-16 mb-2 md:w-11/12 lg:w-11/12 xl:w-9/12 first:mt-0">
 				<BaseCard>
 					<slot slot="header">{group.type} Projects</slot>
 					<BaseCatalog items={group.data} let:item>

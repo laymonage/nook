@@ -32,7 +32,7 @@
 
 <div class="w-full mx-auto mt-2 mb-16 sm:mt-32">
 	<BaseContainer>
-		<div class="w-full mx-auto mt-16 sm:w-11/12 lg:w-10/12 xl:w-7/12 first:mt-0 post">
+		<div class="w-full mx-auto mt-16 mb-2 lg:w-9/12 xl:w-7/12 first:mt-0 post">
 			<BaseCard>
 				<div class="flex-row text-center">
 					<h2 class="mb-4 text-3xl font-bold">{title}</h2>

@@ -34,7 +34,7 @@
 
 <div class="w-full mx-auto mt-2 mb-16 sm:mt-32">
 	<BaseContainer>
-		<div class="w-full mx-auto sm:w-11/12 lg:w-10/12 xl:w-7/12">
+		<div class="w-full mx-auto md:w-11/12 lg:w-9/12 xl:w-7/12">
 			<div class="mb-2">
 				<BaseCard>
 					<h1 class="mb-8 text-4xl text-center">Posts</h1>

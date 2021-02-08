@@ -7,12 +7,12 @@
 
 <button
 	type="button"
-	class="fixed z-10 text-white transition duration-300 bg-blue-900 rounded-full shadow-lg bottom-4 right-4 button dark:bg-gray-700 focus:outline-none"
+	class="fixed z-10 text-white transition duration-300 bg-blue-900 rounded-full shadow-lg bottom-3 right-3 button dark:bg-gray-700 focus:outline-none"
 	class:button-hidden={!showButton}
 >
 	<svg
 		on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-		class="w-16 h-16 fill-current"
+		class="w-12 h-12 fill-current sm:w-16 sm:h-16"
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 24 24"
 	>

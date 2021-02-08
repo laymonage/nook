@@ -1,5 +1,5 @@
 <div
-	class="flex-col w-full p-6 transition-colors duration-500 bg-white rounded shadow-md sm:p-8 dark:bg-gray-800 ease min-w-min"
+	class="flex-col w-full p-6 transition-colors duration-500 bg-white rounded shadow-md sm:p-8 dark:bg-gray-800 ease"
 >
 	{#if $$slots.header}
 		<div

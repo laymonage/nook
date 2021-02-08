@@ -26,7 +26,7 @@
 
 .markdown p,
 .markdown li {
-	@apply mb-6 text-base text-justify sm:text-lg;
+	@apply mt-6 text-base text-justify sm:text-lg;
 	line-height: 1.7;
 }
 

@@ -27,7 +27,7 @@
 
 <nav
 	role="navigation"
-	class="fixed bottom-0 z-10 flex flex-col-reverse w-full py-3 transition duration-500 transform bg-white sm:flex-row sm:justify-between sm:items-center dark:bg-gray-800 dark:text-blue-200 ease sm:top-0 sm:bottom-auto"
+	class="fixed bottom-0 z-20 flex flex-col-reverse w-full py-3 transition duration-500 transform bg-white sm:flex-row sm:justify-between sm:items-center dark:bg-gray-800 dark:text-blue-200 ease sm:top-0 sm:bottom-auto"
 	class:shadow-md={!hide}
 	class:translate-y-full={hide}
 	class:sm:-translate-y-full={hide}
