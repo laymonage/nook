@@ -1,6 +1,6 @@
 import { join } from 'path';
-import type { Response } from '../../models/api';
-import { readPostsDir, rootDir } from '../../utils/io';
+import type { Response } from '$models/api';
+import { readPostsDir, rootDir } from '$utils/io';
 
 export async function get(): Promise<Response> {
 	return {

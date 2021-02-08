@@ -1,4 +1,4 @@
-import type { Post, PostAttributes } from 'src/models/content';
+import type { Post, PostAttributes } from '$models/content';
 import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import fm from 'front-matter';

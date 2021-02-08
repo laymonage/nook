@@ -18,7 +18,11 @@
 		"forceConsistentCasingInFileNames": true,
 		"baseUrl": ".",
 		"paths": {
-			"$components/*": ["./src/components/*"]
+			"$components/*": ["./src/components/*"],
+			"$assets/*": ["./src/assets/*"],
+			"$data/*": ["./src/data/*"],
+			"$models/*": ["./src/models/*"],
+			"$utils/*": ["./src/utils/*"]
 		}
 	},
 	"include": ["src/**/*"],

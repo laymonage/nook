@@ -1,6 +1,6 @@
-import type { Request, Response } from '../../models/api';
+import type { Request, Response } from '$models/api';
 import { join } from 'path';
-import { readPost, rootDir } from '../../utils/io';
+import { readPost, rootDir } from '$utils/io';
 
 export async function get(req: Request): Promise<Response> {
 	const { slug } = req.params;
