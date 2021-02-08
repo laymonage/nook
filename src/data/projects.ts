@@ -44,9 +44,9 @@ const softwareProjects = [
 		image: {
 			src: '/img/projects/apex.svg',
 		},
-		title: 'laymonage.com',
-		url: 'https://github.com/laymonage/apex',
-		description: 'A personal website built with Vue, TypeScript, and Tailwind.',
+		title: 'nook',
+		url: 'https://github.com/laymonage/nook',
+		description: 'This very website, built with Svelte, TypeScript, and Tailwind.',
 		details: {
 			type: 'disc',
 			children: [
