@@ -66,7 +66,7 @@
 }
 
 .markdown pre code {
-	@apply block p-4 my-4;
+	@apply block p-4 my-4 overflow-auto;
 }
 
 .markdown img {
