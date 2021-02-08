@@ -1,39 +1,32 @@
-# create-svelte
+# nook
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+[![Netlify Status][netlify-status]][netlify-deploys]
 
-## Creating a project
+Yet another incarnation of [my personal website][laymonage], (re)built with
+[Svelte][svelte], [SvelteKit][sveltekit], [TypeScript][typescript], and
+[Tailwind][tailwind]. It is currently based on the previous incarnation, which
+uses [Vue][vue]. I am planning to settle down with this setup for quite a
+while, so this website will eventually include most of my blog posts from all
+the previous "personal websites" I built.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Setup
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+1. `npm install`: install dependencies
+2. `npm run dev`: compile and hot-reload for development
+3. `npm run build`: compile and minify for production
+4. `npm start`: serve the compiled build without hot reload
+5. `npm run lint`: lint and fix files
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+## License
 
-> Note: the `@next` is temporary
+[MIT][license]
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Svelte apps are built with _adapters_, which optimise your project for deployment to different environments, like [Begin](https://begin.com), [Netlify](https://www.netlify.com), [Vercel](https://vercel.com) and so on. (You can also create your own adapter — instructions TODO.)
-
-By default, `npm run build` will generate a Node app that you can run with `node build`. To use a different adapter, install it and update your `svelte.config.js` accordingly. The following official adapters are available:
-
-- [@sveltejs/adapter-node](https://github.com/sveltejs/kit/tree/master/packages/adapter-node)
-- [@sveltejs/adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
-- [@sveltejs/adapter-netlify](https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify)
-- ...more soon
+[netlify-status]: https://api.netlify.com/api/v1/badges/2bef1e93-8849-4734-b8f1-d11ac2a005ab/deploy-status
+[netlify-deploys]: https://app.netlify.com/sites/laymonage-new/deploys
+[laymonage]: https://laymonage.com
+[svelte]: https://svelte.dev
+[sveltekit]: https://www.npmjs.com/package/@sveltejs/kit
+[typescript]: https://typescriptlang.org
+[tailwind]: https://tailwindcss.com
+[vue]: https://vuejs.org
+[license]: LICENSE
