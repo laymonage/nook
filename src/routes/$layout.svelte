@@ -5,6 +5,7 @@
 	import '$assets/css/hljs-night-owl.css';
 	import { capitalize } from '$utils/string';
 	import Nav from '$components/Nav.svelte';
+	import ScrollTopButton from '$components/ScrollTopButton.svelte';
 
 	$: current = $page.path.substr(1);
 </script>
@@ -22,6 +23,8 @@
 <main class="flex items-center w-full min-h-screen">
 	<slot />
 </main>
+
+<ScrollTopButton />
 
 <style>
 	main::before {
