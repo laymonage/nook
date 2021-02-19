@@ -1,5 +1,5 @@
 <script>
-	import marked from 'marked';
+	import { md } from '$utils/markdown';
 	export let item;
 </script>
 
@@ -21,11 +21,11 @@
 			</a>
 		</h3>
 		<div class="mt-2 md:text-base lg:text-lg">
-			<div>{@html marked(item.description)}</div>
+			<div>{@html md(item.description)}</div>
 			{#if item.details && item.details.children}
 				<ul class="mt-2 ml-8 text-base list-disc">
 					{#each item.details.children as child}
-						<li>{@html marked(child)}</li>
+						<li>{@html md(child)}</li>
 					{/each}
 				</ul>
 			{/if}
