@@ -4,6 +4,7 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
+		"lint": "eslint",
 		"start": "svelte-kit start"
 	},
 	"devDependencies": {
@@ -13,9 +14,15 @@
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/kit": "next",
 		"@sveltejs/snowpack-config": "next",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
 		"autoprefixer": "^10.2.3",
+		"eslint": "^7.18.0",
+		"eslint-plugin-svelte3": "^3.0.0",
 		"postcss": "^8.2.4",
 		"postcss-cli": "^8.3.1",
+		"prettier": "^2.2.1",
+		"prettier-plugin-svelte": "^2.1.1",
 		"svelte": "^3.29.0",
 		"svelte-preprocess": "^4.0.0",
 		"tailwindcss": "^2.0.2",
