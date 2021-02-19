@@ -1,4 +1,5 @@
 <script>
+	import marked from 'marked';
 	import BaseCard from './base/BaseCard.svelte';
 
 	import data from '$data/profile';
@@ -16,7 +17,7 @@
 		</slot>
 
 		<div class="text-left md:text-2xl text-xl ph:text-lg mb-8">
-			{data.description}
+			{@html marked(data.description)}
 		</div>
 		<div class="flex items-center">
 			{#each data.links as link}
