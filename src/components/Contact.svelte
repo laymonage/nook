@@ -1,29 +1,7 @@
-<script lang="ts">
+<script>
 	import BaseCard from './base/BaseCard.svelte';
-	import GitHub from './icons/GitHub.svelte';
-	import LinkedIn from './icons/LinkedIn.svelte';
-	import Twitter from './icons/Twitter.svelte';
 
-	const data = {
-		alias: 'laymonage',
-		name: 'Sage M. Abdullah',
-		description: 'I build up and break down stuff in the open.',
-		metaDescription: 'laymonage is Sage M. Abdullah. I build up and break down stuff in the open.',
-		links: [
-			{
-				url: 'https://github.com/laymonage',
-				icon: GitHub,
-			},
-			{
-				url: 'https://linkedin.com/in/laymonage',
-				icon: LinkedIn,
-			},
-			{
-				url: 'https://twitter.com/laymonage',
-				icon: Twitter,
-			},
-		],
-	};
+	import data from '$data/profile';
 </script>
 
 <div class="sm:w-10/12 lg:w-7/12 xl:w-6/12 mx-auto">
