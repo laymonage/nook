@@ -4,14 +4,15 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
-		"lint": "eslint",
-		"start": "svelte-kit start"
+		"adapt": "svelte-kit adapt",
+		"start": "svelte-kit start",
+		"lint": "eslint"
 	},
 	"devDependencies": {
 		"@snowpack/plugin-build-script": "^2.1.0",
 		"@snowpack/plugin-postcss": "^1.1.0",
 		"@snowpack/plugin-typescript": "^1.0.0",
-		"@sveltejs/adapter-node": "next",
+		"@sveltejs/adapter-netlify": "next",
 		"@sveltejs/kit": "next",
 		"@sveltejs/snowpack-config": "next",
 		"@typescript-eslint/eslint-plugin": "^4.14.1",
