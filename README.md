@@ -5,9 +5,11 @@
 Yet another incarnation of [my personal website][laymonage], (re)built with
 [Svelte][svelte], [SvelteKit][sveltekit], [TypeScript][typescript], and
 [Tailwind][tailwind]. It is currently based on the [previous
-incarnation][apex], which uses [Vue][vue]. I am planning to settle down with
+incarnation][apex], which uses [Vue][vue]. ~~I am planning to settle down with
 this setup for quite a while, so this website will eventually include most of
-my blog posts from all the previous "personal websites" I built.
+my blog posts from all the previous "personal websites" I built.~~ SvelteKit is
+still very unstable, so I decided to (yet again) rebuild the website,
+[this time with Next][base].
 
 ## Setup
 
@@ -30,4 +32,5 @@ my blog posts from all the previous "personal websites" I built.
 [tailwind]: https://tailwindcss.com
 [apex]: https://github.com/laymonage/apex
 [vue]: https://vuejs.org
+[base]: https://github.com/laymonage/base
 [license]: LICENSE
