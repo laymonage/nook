@@ -23,7 +23,7 @@
 		"eslint-plugin-svelte3": "^3.1.1",
 		"front-matter": "^4.0.2",
 		"highlight.js": "^10.6.0",
-		"marked": "^1.2.9",
+		"marked": "^2.0.0",
 		"postcss": "^8.2.6",
 		"postcss-cli": "^8.3.1",
 		"postcss-nested": "^5.0.3",
